@@ -1,6 +1,14 @@
 <?php
+
 return array (
-  'prefix' => 'fa-solid',
+  'name' => 'fa-solid',
+  'info' => 
+  array (
+    'name' => 'Font Awesome 5 Solid',
+    'class' => 'FontAwesome5Solid',
+    'rootPrefix' => 'fas',
+    'prefix' => 'fa',
+  ),
   'icons' => 
   array (
     'abacus' => 'abacus',

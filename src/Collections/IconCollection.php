@@ -3,6 +3,7 @@
 namespace ByTIC\Icons\Collections;
 
 use ByTIC\Icons\Icon;
+use Nip\Utility\Arr;
 
 /**
  * Class IconCollection
@@ -12,9 +13,20 @@ class IconCollection
 {
     protected $tag = 'i';
 
+    protected $rootPrefix = '';
+
+    protected $prefix = '';
+
+    protected $categories = [];
+
     public static function __callStatic($name, $arguments): Icon
     {
         return static::instance()->icon($name, $arguments);
+    }
+
+    public function categories(): array
+    {
+        return $this->categories;
     }
 
     /**
@@ -29,11 +41,48 @@ class IconCollection
     {
 //        $options = $this->parseOptions($options);
 //
-//        $options['class'] = $this->getClasses($name, Arr::pull($options, 'class'));
+        $options['class'] = $this->getClasses($name, Arr::pull($options, 'class'));
 
         return new Icon($this->tag, $name, $options);
     }
 
+    /**
+     * Returns all needed font-awesome classes, and any extra ones required.
+     *
+     * @param string $name
+     * @param string $extra
+     *
+     * @return string
+     */
+    private function getClasses($name, $extra = '')
+    {
+        return trim(
+            implode(
+                ' ',
+                [
+                    $this->rootPrefix,
+                    $this->parse($name),
+                    $extra
+                ]
+            )
+        );
+    }
+
+    /**
+     * Parses the given name, to check if it starts with "fa-" already.
+     *
+     * @param string $name
+     *
+     * @return string
+     */
+    private function parse($name)
+    {
+        if (strpos($name, "{$this->prefix}-") === 0) {
+            return $name;
+        }
+
+        return "{$this->prefix}-{$name}";
+    }
 
     /**
      * Singleton

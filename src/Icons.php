@@ -17,6 +17,15 @@ class Icons
         return static::manager()->icon($name, $options);
     }
 
+    /**
+     * @param $name
+     * @return Collections\IconCollection
+     */
+    public static function collection($name = null): Collections\IconCollection
+    {
+        return static::manager()->create($name);
+    }
+
     protected static function manager($newManager= null)
     {
         static $manager;

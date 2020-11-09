@@ -15,6 +15,6 @@ class IconsTest extends AbstractTest
     {
         $icon = Icons::show('user');
         self::assertInstanceOf(Icon::class, $icon);
-        self::assertSame('<i></i>', (string) $icon);
+        self::assertSame('<i class="fas fa-user"></i>', (string) $icon);
     }
 }
