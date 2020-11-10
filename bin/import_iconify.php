@@ -5,7 +5,8 @@ use Iconify\JSONTools\Collection;
 require '../vendor/autoload.php';
 
 $collections = [
-    'fa-solid' => 'fa-solid'
+    'fa-solid' => 'fa-solid',
+    'la' => 'la'
 ];
 $dataPath = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'data';
 
