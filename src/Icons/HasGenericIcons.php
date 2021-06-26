@@ -25,4 +25,12 @@ trait HasGenericIcons
     {
         return static::show(Icon::CHECK);
     }
+
+    /**
+     * @return Icon
+     */
+    public static function edit()
+    {
+        return static::show(Icon::EDIT);
+    }
 }
