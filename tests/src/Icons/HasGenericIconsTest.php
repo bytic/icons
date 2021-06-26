@@ -11,9 +11,9 @@ use ByTIC\Icons\Tests\AbstractTest;
  */
 class HasGenericIconsTest extends AbstractTest
 {
-    public function test_show()
+    public function test_ok()
     {
         $icon = Icons::ok();
-        self::assertSame('<i class="fas fa-ok"></i>', (string)$icon);
+        self::assertEquals('<i class="fas fa-check"></i>', $icon);
     }
 }
