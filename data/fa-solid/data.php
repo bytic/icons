@@ -2,14 +2,18 @@
 
 return array (
   'name' => 'fa-solid',
-  'info' => 
+  'info' =>
   array (
     'name' => 'Font Awesome 5 Solid',
     'class' => 'FontAwesome5Solid',
     'rootPrefix' => 'fas',
     'prefix' => 'fa',
   ),
-  'icons' => 
+    'aliases' =>
+    array (
+        \ByTIC\Icons\Icon::REMOVE => 'trash-alt',
+    ),
+  'icons' =>
   array (
     'abacus' => 'abacus',
     'ad' => 'ad',

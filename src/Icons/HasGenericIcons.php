@@ -37,6 +37,14 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
+    public static function remove()
+    {
+        return static::show(Icon::REMOVE);
+    }
+
+    /**
+     * @return Icon
+     */
     public static function sort()
     {
         return static::show(Icon::SORT);

@@ -12,6 +12,8 @@ foreach ($collections as $collection) {
     $path = $dataPath . DIRECTORY_SEPARATOR . $collection . DIRECTORY_SEPARATOR . 'data.php';
     $data = require $path;
 
+    $data['aliases'] = is_array($data['aliases']) ? $data['aliases'] : $data;
+
     $content = "<?php
 
 namespace ByTIC\Icons\Dist;
@@ -26,7 +28,9 @@ class {$data['info']['class']} extends IconCollection
 {
     protected \$rootPrefix = '{$data['info']['rootPrefix']}';
     
-    protected \$prefix = '{$data['info']['prefix']}';   
+    protected \$prefix = '{$data['info']['prefix']}';  
+     
+    protected \$aliases = ".var_export($data['aliases'], true).";
     
     protected \$categories = ".var_export($data['categories'], true).";
 }";

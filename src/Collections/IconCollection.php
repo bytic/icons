@@ -17,6 +17,8 @@ class IconCollection
 
     protected $prefix = '';
 
+    protected $aliases = [];
+
     protected $categories = [];
 
     public static function __callStatic($name, $arguments): Icon
@@ -61,7 +63,7 @@ class IconCollection
                 ' ',
                 [
                     $this->rootPrefix,
-                    $this->parse($name),
+                    $this->parse($this->checkAlias($name)),
                     $extra
                 ]
             )
@@ -82,6 +84,14 @@ class IconCollection
         }
 
         return "{$this->prefix}-{$name}";
+    }
+
+    protected function checkAlias($name)
+    {
+        if (isset($this->aliases[$name])) {
+            return $this->aliases[$name];
+        }
+        return $name;
     }
 
     /**
