@@ -8,9 +8,11 @@ namespace ByTIC\Icons;
  */
 class Icon
 {
+    public const PLUS = 'plus';
     public const CHECK = 'check';
     public const EDIT = 'edit';
     public const REMOVE = 'remove';
+    public const CLONE = 'clone';
     public const SORT = 'sort';
 
     protected $tag = 'i';

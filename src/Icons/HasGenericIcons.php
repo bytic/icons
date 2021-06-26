@@ -29,9 +29,25 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
+    public static function plus()
+    {
+        return static::show(Icon::PLUS);
+    }
+
+    /**
+     * @return Icon
+     */
     public static function edit()
     {
         return static::show(Icon::EDIT);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function clone()
+    {
+        return static::show(Icon::CLONE);
     }
 
     /**
