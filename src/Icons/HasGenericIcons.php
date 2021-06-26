@@ -33,4 +33,12 @@ trait HasGenericIcons
     {
         return static::show(Icon::EDIT);
     }
+
+    /**
+     * @return Icon
+     */
+    public static function sort()
+    {
+        return static::show(Icon::SORT);
+    }
 }

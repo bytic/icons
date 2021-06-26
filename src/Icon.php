@@ -10,6 +10,7 @@ class Icon
 {
     public const CHECK = 'check';
     public const EDIT = 'edit';
+    public const SORT = 'sort';
 
     protected $tag = 'i';
 
