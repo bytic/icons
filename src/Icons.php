@@ -2,12 +2,16 @@
 
 namespace ByTIC\Icons;
 
+use ByTIC\Icons\Icons\HasGenericIcons;
+
 /**
  * Class Icons
  * @package ByTIC\Icons
  */
 class Icons
 {
+    use HasGenericIcons;
+
     /**
      * @param $name
      * @param array $options
@@ -26,7 +30,7 @@ class Icons
         return static::manager()->create($name);
     }
 
-    protected static function manager($newManager= null)
+    protected static function manager($newManager= null): IconsManager
     {
         static $manager;
         if ($newManager instanceof IconsManager) {
