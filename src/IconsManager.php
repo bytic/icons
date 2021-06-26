@@ -40,7 +40,7 @@ class IconsManager
      */
     public function icon($name, $options = [])
     {
-        return $this->create($this->defaultCollection)->icon($name, $options);
+        return call_user_func_array([$this->create($this->defaultCollection), $name], $options);
     }
 
     /**

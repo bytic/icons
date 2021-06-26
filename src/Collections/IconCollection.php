@@ -26,6 +26,11 @@ class IconCollection
         return static::instance()->icon($name, $arguments);
     }
 
+    public function __call($name, $arguments): Icon
+    {
+        return $this->icon($name, $arguments);
+    }
+
     public function categories(): array
     {
         return $this->categories;

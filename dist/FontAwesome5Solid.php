@@ -5,19 +5,18 @@ namespace ByTIC\Icons\Dist;
 use ByTIC\Icons\Collections\IconCollection;
 
 /**
- * Class FontAwesome5Solid
- * @package ByTIC\Icons\Dist
+ * Class FontAwesome5Solid * @package ByTIC\Icons\Dist
  */
 class FontAwesome5Solid extends IconCollection
 {
     protected $rootPrefix = 'fas';
-    
-    protected $prefix = 'fa';  
-     
+
+    protected $prefix = 'fa';
+
     protected $aliases = array (
   'remove' => 'trash-alt',
 );
-    
+
     protected $categories = array (
   'Accessibility' => 
   array (
