@@ -8,7 +8,7 @@ namespace ByTIC\Icons;
  */
 class Icon
 {
-    public const OK = 'ok';
+    public const CHECK = 'check';
 
     protected $tag = 'i';
 
