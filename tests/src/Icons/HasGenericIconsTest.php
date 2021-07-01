@@ -22,4 +22,10 @@ class HasGenericIconsTest extends AbstractTest
         $icon = Icons::remove();
         self::assertEquals('<i class="fas fa-trash-alt"></i>', $icon);
     }
+
+    public function test_list_ul()
+    {
+        $icon = Icons::list_ul();
+        self::assertEquals('<i class="fas fa-list-ul"></i>', $icon);
+    }
 }

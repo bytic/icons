@@ -53,6 +53,22 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
+    public static function cog()
+    {
+        return static::show(Icon::COG);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function list_ul()
+    {
+        return static::show(Icon::LIST_UL);
+    }
+
+    /**
+     * @return Icon
+     */
     public static function remove()
     {
         return static::show(Icon::REMOVE);
@@ -64,5 +80,21 @@ trait HasGenericIcons
     public static function sort()
     {
         return static::show(Icon::SORT);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function star()
+    {
+        return static::show(Icon::STAR);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function user()
+    {
+        return static::show(Icon::USER);
     }
 }
