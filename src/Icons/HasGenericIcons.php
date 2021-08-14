@@ -93,6 +93,14 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
+    public static function search()
+    {
+        return static::show(Icon::SEARCH);
+    }
+
+    /**
+     * @return Icon
+     */
     public static function user()
     {
         return static::show(Icon::USER);

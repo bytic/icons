@@ -18,6 +18,7 @@ class Icon
     public const CLONE = 'clone';
     public const SORT = 'sort';
     public const STAR = 'star';
+    public const SEARCH = 'search';
 
     protected $tag = 'i';
 
