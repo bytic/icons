@@ -13,6 +13,7 @@ class Icon
     public const COG = 'cog';
     public const CHECK = 'check';
     public const EDIT = 'edit';
+    public const GLOBE = 'globe';
     public const LIST_UL = 'list-ul';
     public const REMOVE = 'remove';
     public const CLONE = 'clone';

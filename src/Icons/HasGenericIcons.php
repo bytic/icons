@@ -58,6 +58,15 @@ trait HasGenericIcons
         return static::show(Icon::COG);
     }
 
+
+    /**
+     * @return Icon
+     */
+    public static function globe()
+    {
+        return static::show(Icon::GLOBE);
+    }
+
     /**
      * @return Icon
      */
