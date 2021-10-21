@@ -13,7 +13,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function ok()
+    public static function ok(): Icon
     {
         return static::show(Icon::CHECK);
     }
@@ -21,7 +21,15 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function check()
+    public static function calendar(): Icon
+    {
+        return static::show(Icon::CALENDAR);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function check(): Icon
     {
         return static::show(Icon::CHECK);
     }
@@ -29,7 +37,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function plus()
+    public static function plus(): Icon
     {
         return static::show(Icon::PLUS);
     }
@@ -37,7 +45,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function edit()
+    public static function edit(): Icon
     {
         return static::show(Icon::EDIT);
     }
@@ -45,7 +53,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function clone()
+    public static function clone(): Icon
     {
         return static::show(Icon::CLONE);
     }
@@ -53,7 +61,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function cog()
+    public static function cog(): Icon
     {
         return static::show(Icon::COG);
     }
@@ -62,7 +70,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function globe()
+    public static function globe(): Icon
     {
         return static::show(Icon::GLOBE);
     }
@@ -70,7 +78,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function list_ul()
+    public static function list_ul(): Icon
     {
         return static::show(Icon::LIST_UL);
     }
@@ -78,7 +86,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function remove()
+    public static function remove(): Icon
     {
         return static::show(Icon::REMOVE);
     }
@@ -86,7 +94,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function sort()
+    public static function sort(): Icon
     {
         return static::show(Icon::SORT);
     }
@@ -94,7 +102,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function star()
+    public static function star(): Icon
     {
         return static::show(Icon::STAR);
     }
@@ -102,7 +110,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function search()
+    public static function search(): Icon
     {
         return static::show(Icon::SEARCH);
     }
@@ -110,7 +118,7 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function user()
+    public static function user(): Icon
     {
         return static::show(Icon::USER);
     }

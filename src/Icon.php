@@ -11,6 +11,7 @@ class Icon
     public const PLUS = 'plus';
     public const USER = 'user';
     public const COG = 'cog';
+    public const CALENDAR = 'calendar';
     public const CHECK = 'check';
     public const EDIT = 'edit';
     public const GLOBE = 'globe';
