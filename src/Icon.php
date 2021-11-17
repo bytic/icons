@@ -8,19 +8,23 @@ namespace ByTIC\Icons;
  */
 class Icon
 {
-    public const PLUS = 'plus';
-    public const USER = 'user';
+    public const BOOKMARK = 'bookmark';
+    public const CLONE = 'clone';
     public const COG = 'cog';
     public const CALENDAR = 'calendar';
     public const CHECK = 'check';
     public const EDIT = 'edit';
     public const GLOBE = 'globe';
+    public const GIFT = 'gift';
+    public const HEART = 'heart';
     public const LIST_UL = 'list-ul';
+    public const PLUS = 'plus';
     public const REMOVE = 'remove';
-    public const CLONE = 'clone';
     public const SORT = 'sort';
     public const STAR = 'star';
     public const SEARCH = 'search';
+    public const USER = 'user';
+    public const USERS = 'user';
 
     protected $tag = 'i';
 

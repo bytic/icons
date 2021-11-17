@@ -13,6 +13,14 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
+    public static function bookmark(): Icon
+    {
+        return static::show(Icon::BOOKMARK);
+    }
+
+    /**
+     * @return Icon
+     */
     public static function ok(): Icon
     {
         return static::show(Icon::CHECK);
@@ -66,13 +74,25 @@ trait HasGenericIcons
         return static::show(Icon::COG);
     }
 
-
     /**
      * @return Icon
      */
     public static function globe(): Icon
     {
         return static::show(Icon::GLOBE);
+    }
+
+    public static function gift(): Icon
+    {
+        return static::show(Icon::GIFT);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function heart(): Icon
+    {
+        return static::show(Icon::HEART);
     }
 
     /**
@@ -121,5 +141,13 @@ trait HasGenericIcons
     public static function user(): Icon
     {
         return static::show(Icon::USER);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function users(): Icon
+    {
+        return static::show(Icon::USERS);
     }
 }
