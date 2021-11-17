@@ -20,6 +20,7 @@ class Icon
     public const LIST_UL = 'list-ul';
     public const PLUS = 'plus';
     public const REMOVE = 'remove';
+    public const RIBBON = 'ribbon';
     public const SORT = 'sort';
     public const STAR = 'star';
     public const SEARCH = 'search';

@@ -114,6 +114,14 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
+    public static function ribbon(): Icon
+    {
+        return static::show(Icon::RIBBON);
+    }
+
+    /**
+     * @return Icon
+     */
     public static function sort(): Icon
     {
         return static::show(Icon::SORT);
