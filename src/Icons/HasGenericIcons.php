@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ByTIC\Icons\Icons;
 
 use ByTIC\Icons\Icon;
@@ -141,6 +143,22 @@ trait HasGenericIcons
     public static function search(): Icon
     {
         return static::show(Icon::SEARCH);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function question(): Icon
+    {
+        return static::show(Icon::QUESTION);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function questionCircle(): Icon
+    {
+        return static::show(Icon::QUESTION_CIRCLE);
     }
 
     /**

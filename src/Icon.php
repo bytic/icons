@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ByTIC\Icons;
 
 /**
@@ -24,6 +26,8 @@ class Icon
     public const SORT = 'sort';
     public const STAR = 'star';
     public const SEARCH = 'search';
+    public const QUESTION = 'question';
+    public const QUESTION_CIRCLE = 'question-circle';
     public const USER = 'user';
     public const USERS = 'user';
 
@@ -127,10 +131,8 @@ class Icon
      *
      * @param string $key
      * @param string $value
-     *
-     * @return string
      */
-    private function attributeElement($key, $value)
+    private function attributeElement($key, $value): ?string
     {
         // For numeric keys we will assume that the key and the value are the same
         // as this will convert HTML attributes such as "required" to a correct
@@ -139,8 +141,10 @@ class Icon
             $key = $value;
         }
 
-        if ($value !== null) {
-            return $key . '="' . $value . '"';
+        if ($value === null) {
+            return null;
         }
+
+        return $key . '="' . $value . '"';
     }
 }
