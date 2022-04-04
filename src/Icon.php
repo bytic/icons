@@ -15,6 +15,7 @@ class Icon
     public const COG = 'cog';
     public const CALENDAR = 'calendar';
     public const CHECK = 'check';
+    public const CHEVRON_CIRCLE_DOWN = 'chevron-circle-down';
     public const EDIT = 'edit';
     public const GLOBE = 'globe';
     public const GIFT = 'gift';

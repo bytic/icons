@@ -47,6 +47,14 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
+    public static function chevronCircleDown(): Icon
+    {
+        return static::show(Icon::CHEVRON_CIRCLE_DOWN);
+    }
+
+    /**
+     * @return Icon
+     */
     public static function plus(): Icon
     {
         return static::show(Icon::PLUS);
