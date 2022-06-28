@@ -15,173 +15,181 @@ trait HasGenericIcons
     /**
      * @return Icon
      */
-    public static function bookmark(): Icon
+    public static function bookmark($options = []): Icon
     {
-        return static::show(Icon::BOOKMARK);
+        return static::show(Icon::BOOKMARK, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function ok(): Icon
+    public static function ok($options = []): Icon
     {
-        return static::show(Icon::CHECK);
+        return static::show(Icon::CHECK, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function calendar(): Icon
+    public static function calendar($options = []): Icon
     {
-        return static::show(Icon::CALENDAR);
+        return static::show(Icon::CALENDAR, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function check(): Icon
+    public static function check($options = []): Icon
     {
-        return static::show(Icon::CHECK);
+        return static::show(Icon::CHECK, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function chevronCircleDown(): Icon
+    public static function chevronCircleDown($options = []): Icon
     {
-        return static::show(Icon::CHEVRON_CIRCLE_DOWN);
+        return static::show(Icon::CHEVRON_CIRCLE_DOWN, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function plus(): Icon
+    public static function plus($options = []): Icon
     {
-        return static::show(Icon::PLUS);
+        return static::show(Icon::PLUS, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function edit(): Icon
+    public static function edit($options = []): Icon
     {
-        return static::show(Icon::EDIT);
+        return static::show(Icon::EDIT, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function clone(): Icon
+    public static function clone($options = []): Icon
     {
-        return static::show(Icon::CLONE);
+        return static::show(Icon::CLONE, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function cog(): Icon
+    public static function cog($options = []): Icon
     {
-        return static::show(Icon::COG);
+        return static::show(Icon::COG, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function globe(): Icon
+    public static function globe($options = []): Icon
     {
-        return static::show(Icon::GLOBE);
+        return static::show(Icon::GLOBE, $options);
     }
 
-    public static function gift(): Icon
+    public static function gift($options = []): Icon
     {
-        return static::show(Icon::GIFT);
-    }
-
-    /**
-     * @return Icon
-     */
-    public static function heart(): Icon
-    {
-        return static::show(Icon::HEART);
+        return static::show(Icon::GIFT, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function list_ul(): Icon
+    public static function heart($options = []): Icon
     {
-        return static::show(Icon::LIST_UL);
+        return static::show(Icon::HEART, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function remove(): Icon
+    public static function list_ul($options = []): Icon
     {
-        return static::show(Icon::REMOVE);
+        return static::show(Icon::LIST_UL, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function ribbon(): Icon
+    public static function minus($options = []): Icon
     {
-        return static::show(Icon::RIBBON);
+        return static::show(Icon::MINUS, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function sort(): Icon
+    public static function remove($options = []): Icon
     {
-        return static::show(Icon::SORT);
+        return static::show(Icon::REMOVE, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function star(): Icon
+    public static function ribbon($options = []): Icon
     {
-        return static::show(Icon::STAR);
+        return static::show(Icon::RIBBON, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function search(): Icon
+    public static function sort($options = []): Icon
     {
-        return static::show(Icon::SEARCH);
+        return static::show(Icon::SORT, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function question(): Icon
+    public static function star($options = []): Icon
     {
-        return static::show(Icon::QUESTION);
+        return static::show(Icon::STAR, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function questionCircle(): Icon
+    public static function search($options = []): Icon
     {
-        return static::show(Icon::QUESTION_CIRCLE);
+        return static::show(Icon::SEARCH, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function user(): Icon
+    public static function question($options = []): Icon
     {
-        return static::show(Icon::USER);
+        return static::show(Icon::QUESTION, $options);
     }
 
     /**
      * @return Icon
      */
-    public static function users(): Icon
+    public static function questionCircle($options = []): Icon
     {
-        return static::show(Icon::USERS);
+        return static::show(Icon::QUESTION_CIRCLE, $options);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function user($options = []): Icon
+    {
+        return static::show(Icon::USER, $options);
+    }
+
+    /**
+     * @return Icon
+     */
+    public static function users($options = []): Icon
+    {
+        return static::show(Icon::USERS, $options);
     }
 }

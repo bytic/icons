@@ -21,6 +21,7 @@ class Icon
     public const GIFT = 'gift';
     public const HEART = 'heart';
     public const LIST_UL = 'list-ul';
+    public const MINUS = 'minus';
     public const PLUS = 'plus';
     public const REMOVE = 'remove';
     public const RIBBON = 'ribbon';
