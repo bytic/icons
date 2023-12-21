@@ -13,11 +13,21 @@ use ByTIC\Icons\Icon;
 trait HasGenericIcons
 {
     /**
+     * @param array $options
      * @return Icon
      */
     public static function bookmark($options = []): Icon
     {
         return static::show(Icon::BOOKMARK, $options);
+    }
+
+    /**
+     * @param $options
+     * @return Icon
+     */
+    public static function building($options = []): Icon
+    {
+        return static::show(Icon::BUILDING, $options);
     }
 
     /**
@@ -92,12 +102,17 @@ trait HasGenericIcons
         return static::show(Icon::GLOBE, $options);
     }
 
+    /**
+     * @param $options
+     * @return Icon
+     */
     public static function gift($options = []): Icon
     {
         return static::show(Icon::GIFT, $options);
     }
 
     /**
+     * @param array $options
      * @return Icon
      */
     public static function heart($options = []): Icon
@@ -106,6 +121,7 @@ trait HasGenericIcons
     }
 
     /**
+     * @param array $options
      * @return Icon
      */
     public static function list_ul($options = []): Icon
