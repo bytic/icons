@@ -26,6 +26,8 @@ class Icon
 
     public const EDIT = 'edit';
 
+    public const INVOICE_DOLLAR = 'file-invoice-dollar';
+
     public const GLOBE = 'globe';
 
     public const GIFT = 'gift';

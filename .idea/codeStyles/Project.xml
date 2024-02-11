@@ -3,9 +3,6 @@
     <H2CodeStyleSettings version="6">
       <option name="USE_GENERAL_STYLE" value="false" />
     </H2CodeStyleSettings>
-    <H2CodeStyleSettings version="6">
-      <option name="USE_GENERAL_STYLE" value="false" />
-    </H2CodeStyleSettings>
     <PHPCodeStyleSettings>
       <option name="BLANK_LINES_BETWEEN_IMPORTS" value="1" />
       <option name="LOWER_CASE_BOOLEAN_CONST" value="true" />

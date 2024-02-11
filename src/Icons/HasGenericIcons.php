@@ -95,6 +95,15 @@ trait HasGenericIcons
     }
 
     /**
+     * @param $options
+     * @return Icon
+     */
+    public static function fileInvoiceDollar($options = []): Icon
+    {
+        return static::show(Icon::INVOICE_DOLLAR, $options);
+    }
+
+    /**
      * @return Icon
      */
     public static function globe($options = []): Icon
