@@ -2,9 +2,7 @@
 
 namespace ByTIC\Icons;
 
-use ByTIC\Icons\Icons\HasArrowIcons;
 use ByTIC\Icons\Icons\HasGenericIcons;
-use ByTIC\Icons\Icons\HasInterfacesIcons;
 
 /**
  * Class Icons
@@ -12,8 +10,6 @@ use ByTIC\Icons\Icons\HasInterfacesIcons;
  */
 class Icons implements IconNames
 {
-    use HasArrowIcons;
-    use HasInterfacesIcons;
     use HasGenericIcons;
 
     /**
