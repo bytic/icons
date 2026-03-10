@@ -2,6 +2,7 @@
 
 namespace ByTIC\Icons\Collections;
 
+use ByTIC\Icons\Dist\BootstrapIcons;
 use ByTIC\Icons\Dist\FontAwesome5Solid;
 
 /**
@@ -14,7 +15,8 @@ class CollectionsManager
     const BOOTSTRAP = 'bi';
 
     protected static $collections = [
-        'fa-solid' => FontAwesome5Solid::class
+        'fa-solid' => FontAwesome5Solid::class,
+        'bi' => BootstrapIcons::class,
     ];
 
     /**
